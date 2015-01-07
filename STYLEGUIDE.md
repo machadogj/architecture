@@ -48,6 +48,22 @@ var foo = 'bar';
 var foo = "bar";
 ```
 
+*Right:*
+```js
+{
+    foo: "bar",
+    "with space": "baz"
+}
+```
+
+*Wrong:*
+```js
+{
+ foo: 'bar',
+ 'with space': 'baz'
+}
+```
+
 ## Opening braces go on the same line
 
 Your opening braces go on the same line as the statement.
@@ -267,8 +283,8 @@ keys when your interpreter complains:
 ```js
 var a = ['hello', 'world'];
 var b = {
-  good: 'code',
-  'is generally': 'pretty'
+  good: "code",
+  "is generally": "pretty"
 };
 ```
 
@@ -278,8 +294,8 @@ var b = {
 var a = [
   'hello', 'world'
 ];
-var b = {"good": 'code'
-        , is generally: 'pretty'
+var b = {"good": "code"
+        , is generally: "pretty"
         };
 ```
 
